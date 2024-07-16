@@ -1,0 +1,134 @@
+/* sidebar.module.css */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -370px;
+    width: 370px;
+    /* height: 100vh; */
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .header{
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .closeBtn {
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+    transition: 0.3s;
+  }
+  .nav a:hover{
+color: #1d73be;
+  }
+  
+  .profileSection {
+    margin-top: auto;
+  }
+  
+  .settingsBox {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .settingsBox a {
+    text-decoration: none;
+    color: black;
+  }
+  .settingsBox a:hover{
+    color: #1d73be;
+      }
+  
+  .userInfo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-top: 2px solid rgba(0, 0, 0, 0.527);
+  }
+  .profileSection {
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .settingsBox {
+    width: 50%;
+    position: absolute;
+    bottom: 100%;
+    /* left: 0; */
+    /* right: 0; */
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .settingsBox a{
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  
+  .userInfo {
+    cursor: pointer;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      left: -100%;
+    }
+  }

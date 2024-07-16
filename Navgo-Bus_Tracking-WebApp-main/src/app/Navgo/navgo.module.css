@@ -1,0 +1,192 @@
+/* styles/MainSite.module.css */
+.headerContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  
+  .topHeader {
+    width: 100%;
+    background-color: #1d73be;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .profileLogoWrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .profile {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(250, 250, 250, 0.773);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .searchBar {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 10px;
+    box-shadow: 0px 4px 10px 0.1px rgba(0, 0, 0, 0.248);
+    margin-top: -1rem;
+  }
+  
+  .recentSearch,
+  .busPass,
+  .allBuses,
+  .mapWrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .headingContainer {
+    margin-bottom: 1rem;
+  }
+  
+  .headingContainer h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .searchesList,
+  .busPassWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .searches,
+  .bPass {
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0.1px rgba(0, 0, 0, 0.248);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .busLogo,
+  .busPassLogo {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .busNoRoute h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .busNoRoute p {
+    font-size: 0.9rem;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 1.5vh;
+    background-color: #EEEEEE;
+  }
+  
+  .busList {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0.1px rgba(0, 0, 0, 0.248);
+    padding: 1rem;
+  }
+  
+  .bus1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .busNoArrivalTime {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #EEEEEE;
+    margin: 0.5rem 0;
+  }
+  
+  .allBusesBtn {
+    text-align: center;
+    color: #1d73be;
+    cursor: pointer;
+    padding: 1rem 0;
+  }
+  .mapWrapper{
+    margin-bottom: 50px;
+  }
+
+  .mapWrap {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .mapWrap iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .logo h1 {
+      font-size: 1.5rem;
+    }
+  
+    .searchBar {
+      width: 95%;
+    }
+  
+    .headingContainer h1 {
+      font-size: 1.2rem;
+    }
+  
+    .searches,
+    .bPass {
+      min-width: 150px;
+    }
+  }

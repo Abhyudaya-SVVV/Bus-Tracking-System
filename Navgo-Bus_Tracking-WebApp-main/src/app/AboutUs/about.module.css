@@ -1,0 +1,379 @@
+
+.main{
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 2rem 1rem;
+    width: 1200px;
+    margin: 20px auto;
+    /* background-color: aqua; */
+  }
+  .main .head{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  @media (max-width: 900px) {
+    .main .head{
+      font-size: 4rem;
+    }
+  }
+  @media (max-width: 515px) {
+    .main .head{
+      font-size: 3rem;
+    }
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+  .heroImage {
+    width: 600px;
+    height: 600px;
+    background-color: #fbfcfd;
+    border-radius: 50%;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+  .heroImage img{
+    object-fit: cover;
+  }
+  
+  .heroContent {
+    flex: 1;
+  }
+  .heroContent h2{
+    color: #1d73be;
+  }
+  
+  .heroImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    background-color: #1d73be;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.2s;
+  }
+  .button:hover{
+    background-color: #00549e;
+  }
+  .features {
+    text-align: center;
+  }
+  .features h3{
+    color: #1d73be;
+  }
+  
+  .featureItem,
+  .featureItem2,
+  .featureItem3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .featureItem{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .featureItem2,
+  .featureItem3{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .featureItem img,
+  .featureItem2 img{
+    width: 250px;
+    height: 400px;
+  }
+  .featureItem3 img{
+    width: 400px;
+    height: 400px;
+  } 
+
+  .featureItem h4,
+  .featureItem2 h4{
+    color: #1d73be;
+  }
+  @media (max-width: 500px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .heroImage {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+  
+    .heroContent {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .heroContent h1 {
+      font-size: 20px;
+    }
+  
+    .heroContent h2 {
+      font-size: 30px;
+    }
+  
+    .heroContent p {
+      font-size: 16px;
+    }
+  }
+  
+ 
+
+  @media (max-width: 1200px) {
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .heroImage{
+        width: 450px;
+        height: 450px;
+    }
+    .heroContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex: none;
+    }
+    .featureItem img,
+    .featureItem2 img{
+        width: 250px;
+        height: 400px;
+    }
+    .main{
+        width: 100vw;
+    }
+  }
+
+
+ /* @media (max-width: 768px) {
+    .hero{
+      flex-direction: column;
+    }
+  } */
+
+
+
+
+
+  /* .main {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 70px auto;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .heroContent {
+    flex: 1;
+  }
+  
+  .heroImage {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .button {
+    background-color: #1d73be;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.2s;
+    font-size: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #00549e;
+  }
+  
+  .features {
+    text-align: center;
+  }
+  
+  .featureItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .featureText {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .featureImage {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .heroContent h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .heroContent h2,
+  .features h2 {
+    font-size: 2.5rem;
+    /* font-weight: bold; */
+    /* margin: 0.5rem 0; */
+    /* color: #1d73be;
+  }
+  
+  .features h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1d73be;
+    margin: 1rem 0;
+  }
+  
+  .featureItem h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1d73be;
+    margin-bottom: 0.5rem;
+  }
+  
+  .heroContent p,
+  .featureItem p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 1024px) {
+    .main {
+      padding: 1.5rem;
+    }
+  
+    .heroContent h1 {
+      font-size: 1.75rem;
+    }
+  
+    .heroContent h2,
+  .features h2,
+  .features h3 {
+      font-size: 2.25rem;
+    }
+  
+    .featureItem h4 {
+      font-size: 1.25rem;
+    }
+  
+    .heroContent p,
+    .featureItem pp {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero, .featureItem {
+      flex-direction: column;
+    }
+  
+    .heroImage, .featureImage {
+      max-width: 100%;
+      order: -1;
+    }
+  
+    .heroContent, .featureText {
+      max-width: 100%;
+    }
+  
+    .heroContent h1 {
+      font-size: 1.5rem;
+    }
+  
+    .heroContent h2,
+    .features h2,
+    .features h3 {
+      font-size: 2rem;
+    }
+  
+    .featureItem h4 {
+      font-size: 1.125rem;
+    }
+  
+    .heroContent p,
+    .featureItem p {
+      font-size: 0.9375rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main {
+      padding: 1rem;
+    }
+  
+    .heroContent h1 {
+      font-size: 1.25rem;
+    }
+  
+    .heroContent h2,
+    .features h2,
+    .features h3 {
+      font-size: 1.75rem;
+    }
+  
+    .featureItem h4 {
+      font-size: 1rem;
+    }
+  
+    .heroContent p,
+    .featureItem p {
+      font-size: 0.875rem;
+    }
+  
+    .button {
+      font-size: 0.9375rem;
+    }
+  } */ 
